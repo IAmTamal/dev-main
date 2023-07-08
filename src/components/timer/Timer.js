@@ -9,6 +9,7 @@ function getTimeLeft(endTime) {
   return {days, hours, minutes, seconds};
 }
 function Timer() {
+  // hackathondate&timeInUTCFormat
   const endTime = new Date("2023-07-09T10:00:00").getTime();
 
   const [timeLeft, setTimeLeft] = useState(getTimeLeft(endTime));
